@@ -19,7 +19,14 @@ plugins=(git
 	 zsh-autosuggestions
 	 zsh-syntax-highlighting
 	 fzf
-	 autojump)
+	 autojump
+         colored-man-pages
+         colorize
+         github
+         vagrant
+         virtualenv
+         pip
+         python)
 
 source $ZSH/oh-my-zsh.sh
 
