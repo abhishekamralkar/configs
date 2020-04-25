@@ -6,6 +6,6 @@
 
 
 
-(add-to-list 'load-path "/dir/containing/color-theme-sanityinc-solarized")
+(add-to-list 'load-path "/home/aaa/.emacs.d/themes/color-theme-sanityinc-tomorrow")
 (require 'color-theme-sanityinc-solarized)
 (provide 'init-local)
