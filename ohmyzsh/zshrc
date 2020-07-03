@@ -1,8 +1,16 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+set encoding=utf-8
 # Path to your oh-my-zsh installation.
 export ZSH="/home/aaa/.oh-my-zsh"
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL10K_MODE="nerfont-complete"
 export UPDATE_ZSH_DAYS=1
 
 ENABLE_CORRECTION="true"
@@ -19,7 +27,6 @@ plugins=(git
 	 zsh-autosuggestions
 	 zsh-syntax-highlighting
 	 fzf
-	 autojump
          colored-man-pages
          colorize
          github
@@ -36,12 +43,32 @@ export LANG=en_US.UTF-8
 
 # POWERLEVEL
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir newline status)
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_DISABLE_RPROMPT=true
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir newline status)
+#POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+#POWERLEVEL9K_DISABLE_RPROMPT=true
 
 # My Paths
 export FZF_BASE=~/.fzf
-export PATH=/opt/bin/:$PATH
+export PATH=$PATH:/opt/bin
+export PATH=$PATH:/usr/local/go/bin
+
+# Go
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/golib
+export PATH=$PATH:$GOPATH/bin
+export GOPATH=$GOPATH:$HOME/Code/go
+
+
+export PATH=/home/aaa/.local/bin:$PATH
+export KIND_PATH=~/bin/:$PATH
 #export JAVA_HOME=~/bin/java
 #export PATH=$PATH:$JAVA_HOME/bin
+export PATH="$HOME/.cargo/bin:$PATH"
+export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu:$PATH"
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
+. /usr/share/autojump/autojump.sh
