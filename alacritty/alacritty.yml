@@ -1,0 +1,106 @@
+# Window configuration
+window:
+  dimensions:
+    columns: 140
+    lines: 38
+  padding:
+    x: 10
+    y: 10
+  decorations: none
+
+
+scrolling:
+  history: 100000
+  multiplier: 3
+
+background_opacity: 0.95
+
+# Font configuration
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+  bold:
+    family: MesloLGS NF
+    style: Bold
+  italic:
+    family: MesloLGS NF
+    style: Italic
+
+  size: 9.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+  use_thin_strokes: false
+  debug:
+    persistent_logging: false
+draw_bold_text_with_bright_colors: true
+
+
+# Colors Configuration (Cobalt 2)
+colors:
+  cursor:
+    text: '#fefff2'
+    cursor: '#f0cc09'
+
+  selection:
+    text: '#b5b5b5'
+    background: '#18354f'
+
+  primary:
+    background: '#132738'
+    foreground: '#ffffff'
+
+  normal:
+    black:   '#000000'
+    red:     '#ff0000'
+    green:   '#38de21'
+    yellow:  '#ffe50a'
+    blue:    '#1460d2'
+    magenta: '#ff005d'
+    cyan:    '#00bbbb'
+    white:   '#bbbbbb'
+
+  bright:
+    black:   '#555555'
+    red:     '#f40e17'
+    green:   '#3bd01d'
+    yellow:  '#edc809'
+    blue:    '#5555ff'
+    magenta: '#ff55ff'
+    cyan:    '#6ae3fa'
+    white:   '#ffffff'
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  hide_when_typing: true
+  url:
+    launcher: open
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+  save_to_clipboard: true
+
+shell:
+  program: /usr/bin/zsh
+  args:
+    - --login
+
+key_bindings:
+  - { key: N,        mods: Control|Shift,    action: SpawnNewInstance    }
+  - { key: V,        mods: Control|Shift,    action: Paste               }
+  - { key: C,        mods: Control|Shift,    action: Copy                }
+  - { key: Paste,                            action: Paste               }
+  - { key: Copy,                             action: Copy                }
+  - { key: H,        mods: Control|Shift,    action: Hide                }
+  - { key: Q,        mods: Control|Shift,    action: Quit                }
+  - { key: Return,   mods: Alt,              action: ToggleFullscreen    }
