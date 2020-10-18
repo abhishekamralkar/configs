@@ -104,3 +104,4 @@ key_bindings:
   - { key: H,        mods: Control|Shift,    action: Hide                }
   - { key: Q,        mods: Control|Shift,    action: Quit                }
   - { key: Return,   mods: Alt,              action: ToggleFullscreen    }
+  - { key: PageUp,   mods: Shift,   action: ScrollPageUp,   mode: ~Alt   }
