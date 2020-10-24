@@ -1,0 +1,11 @@
+#+title: My Alacritty KeyBindings
+
+I try to use Keyboard most of the time and which means you need to remember alot of Keybindings.
+
+
+|Key  |What it is for? |
+|---+---|
+|Control/Shift + N | To spin Alacritty   |
+|Control/Shift + V | To Paste  |
+|Control/Shift + C | To Copy |
+|Control/Shift + H | To Hide |
