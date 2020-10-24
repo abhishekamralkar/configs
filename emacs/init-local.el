@@ -73,5 +73,9 @@
       lsp-ui-sideline-enable t
       lsp-ui-imenu-enable t
       lsp-ui-flycheck-enable t)
+
+;;no decoration
+(set-frame-parameter nil 'undecorated t)
+
 (provide 'init-local)
 ;;; init-local.el ends here
