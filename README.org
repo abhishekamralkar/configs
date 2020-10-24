@@ -1,0 +1,12 @@
+#+title: My Dot Files
+
+This repository is to versioned the dotfiles for the tools I use in my day to day life.
+
+To name few tools:-
+
+* Alacritty
+* Emacs
+* VSCode
+* Tmux
+* git
+* OhMyZSHx
