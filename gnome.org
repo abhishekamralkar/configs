@@ -1,0 +1,8 @@
+#+title: Gnome Keybindings
+
+* Windows
+
+|Keybindings| Purpose|
+|Alt+Space|Activate the window menu|
+|Alt+C |Close window|
+|Alt+H|Hide window|
