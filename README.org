@@ -4,9 +4,9 @@ This repository is to versioned the dotfiles for the tools I use in my day to da
 
 To name few tools:-
 
-* Alacritty
-* Emacs
-* VSCode
-* Tmux
-* git
-* OhMyZSHx
+- Alacritty
+- Emacs
+- VSCode
+- Tmux
+- git
+- OhMyZSHx
