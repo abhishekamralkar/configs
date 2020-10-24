@@ -1,8 +1,17 @@
 #+title: Gnome Keybindings
 
-* Windows
+* Window
 
 |Keybindings| Purpose|
 |Alt+Space|Activate the window menu|
 |Alt+C |Close window|
 |Alt+H|Hide window|
+|Alt+M|Move window|
+|Alt+Y| Maximize window|
+|Alt+Z| Maximize window horizontally|
+|Alt+V| Maximize window vertically|
+|ALt+R|Resize window|
+|Alt+Q|Rsstore window|
+|Alt+F| Full Screean|
+|Alt+Left|Split Left|
+|Alt+Right|Split Right|
