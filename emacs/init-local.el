@@ -1,33 +1,77 @@
-;;; init-local.el --- My emacs config -*- lexical-binding: t -*-
-;;; Commentary:
-;;; Code:
-
 (set-face-attribute 'default nil
-                    :family "Fira Code Regular"
-                    :height 112
+                    :family "Fira Code"
+                    :height 90
                     :weight 'normal
                     :width 'normal)
 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'gruvbox-dark-hard t)
 
+(require 'use-package)
 
-(add-to-list 'load-path "/home/aaa/.emacs.d/themes")
-(require 'ujelly-theme)
+(use-package fira-code-mode
+  :custom (fira-code-mode-disabled-ligatures '("[]" "x"))  ; ligatures you don't want
+  :hook prog-mode)
+
 (desktop-save-mode 0)
 
 
 
-(setq org-agenda-files (list "~/.emacs.d/org/todo.org"
-                             "~/.emacs.d/org/learning.org" 
-                             "~/.emacs.d/org/home.org"))
+;; golang
+(setq lsp-gopls-staticcheck t)
+(setq lsp-eldoc-render-all t)
+(setq lsp-gopls-complete-unimported t)
+
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+  :hook (go-mode . lsp-deferred))
+
+;;Set up before-save hooks to format buffer and add/delete imports.
+;;Make sure you don't have other gofmt/goimports hooks enabled.
+
+(defun lsp-go-install-save-hooks ()
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
+(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
+
+;;Optional - provides fancier overlays.
+
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode
+  :init
+)
+
+;;Company mode is a standard completion package that works well with lsp-mode.
+;;company-lsp integrates company mode completion with lsp-mode.
+;;completion-at-point also works out of the box but doesn't support snippets.
+
+(use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 1))
+
+(use-package company-lsp
+  :ensure t
+  :commands company-lsp)
+
+;;Optional - provides snippet support.
+
+(use-package yasnippet
+  :ensure t
+  :commands yas-minor-mode
+  :hook (go-mode . yas-minor-mode))
+
+;;lsp-ui-doc-enable is false because I don't like the popover that shows up on the right
+;;I'll change it if I want it back
 
 
-(add-hook 'rust-mode-hook 'cargo-minor-mode)
-
-(setq racer-cmd "~/.cargo/bin/racer") ;; Rustup binaries PATH
-(setq racer-rust-src-path "~/Code/Rust/rust/src") ;; Rust source code PATH
-
-(add-hook 'rust-mode-hook #'racer-mode)
-(add-hook 'racer-mode-hook #'eldoc-mode)
-(add-hook 'racer-mode-hook #'company-mode)
+(setq lsp-ui-doc-enable nil
+      lsp-ui-peek-enable t
+      lsp-ui-sideline-enable t
+      lsp-ui-imenu-enable t
+      lsp-ui-flycheck-enable t)
 (provide 'init-local)
 ;;; init-local.el ends here
