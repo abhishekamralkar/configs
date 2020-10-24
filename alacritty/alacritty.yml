@@ -13,7 +13,7 @@ scrolling:
   history: 100000
   multiplier: 3
 
-background_opacity: 0.8
+background_opacity: 0.95
 
 # Font configuration
 font:
@@ -55,34 +55,39 @@ mouse:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: true
-# Colors (Ayu Dark)
+# Colors (Cobalt 2)
 colors:
-  # Default colors
+  cursor:
+    text: '#fefff2'
+    cursor: '#f0cc09'
+
+  selection:
+    text: '#b5b5b5'
+    background: '#18354f'
+
   primary:
-    background: '#0A0E14'
-    foreground: '#B3B1AD'
+    background: '#132738'
+    foreground: '#ffffff'
 
-  # Normal colors
   normal:
-    black: '#01060E'
-    red: '#EA6C73'
-    green: '#91B362'
-    yellow: '#F9AF4F'
-    blue: '#53BDFA'
-    magenta: '#FAE994'
-    cyan: '#90E1C6'
-    white: '#C7C7C7'
+    black:   '#000000'
+    red:     '#ff0000'
+    green:   '#38de21'
+    yellow:  '#ffe50a'
+    blue:    '#1460d2'
+    magenta: '#ff005d'
+    cyan:    '#00bbbb'
+    white:   '#bbbbbb'
 
-  # Bright colors
   bright:
-    black: '#686868'
-    red: '#F07178'
-    green: '#C2D94C'
-    yellow: '#FFB454'
-    blue: '#59C2FF'
-    magenta: '#FFEE99'
-    cyan: '#95E6CB'
-    white: '#FFFFFF'
+    black:   '#555555'
+    red:     '#f40e17'
+    green:   '#3bd01d'
+    yellow:  '#edc809'
+    blue:    '#5555ff'
+    magenta: '#ff55ff'
+    cyan:    '#6ae3fa'
+    white:   '#ffffff'
 shell:
   program: /usr/bin/zsh
   args:
