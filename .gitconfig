@@ -4,5 +4,8 @@
 [user]
 	name = Abhishek Amralkar
 	email = abhishekamralkar@gmail.com
+	signingkey = 123F15F24E18E624
 [core]
 	editor = emacs
+[commit]
+	gpgsign = true
