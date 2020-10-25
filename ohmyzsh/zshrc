@@ -136,11 +136,9 @@ export PATH=/home/aaa/Softwares/jdk-11.0.8+10/bin:$PATH
 #export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 
-export GOPATH=$HOME/Code/golang
 export GOROOT=/usr/local/go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH
-export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/Code/golang
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
