@@ -11,7 +11,14 @@
 |Alt+Z| Maximize window horizontally|
 |Alt+V| Maximize window vertically|
 |ALt+R|Resize window|
-|Alt+Q|Rsstore window|
+|Alt+Q|Restore window |
 |Alt+F| Full Screean|
 |Alt+Left|Split Left|
 |Alt+Right|Split Right|
+
+
+* Browser
+
+|Keybindings| Purpose |
+| Ctrl+T | New Tab |
+| Ctrl+Tab | Switch between Tabs|
