@@ -10,8 +10,13 @@ I try to use Keyboard most of the time and which means you need to remember alot
 |Bind + s          | Horizontal Split |
 |Bind + ?          | Help    |
 |Bind + c     | Create New Window|
-|Bind + 0.. | Switch Window |
+|Bind + 0-n | Switch Window |
 |Bind + left| go to the next pane on the left |
 |Bind + right|go to the right pane on the right|
 |Bind + up|go up |
 |Bind + down| go down|
+|Bind + Ctrl+up | resize|
+|Bind + x | Kill|
+|Bind + q | Display Pane Numbers|
+|Bind + : + setw synchronize-panes on | Broadcast to all panes|
+|Bind + : + setw synchronize-panes off | Disable broadcast to all panes|
