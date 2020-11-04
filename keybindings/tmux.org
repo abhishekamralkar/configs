@@ -5,7 +5,13 @@ I try to use Keyboard most of the time and which means you need to remember alot
 
 |Key  |Purpose             |
 |---+---|
-|Control/Shift + N | To spin Alacritty   |
-|Control/Shift + V | To Paste  |
-|Control/Shift + C | To Copy |
-|Control/Shift + H | To Hide |
+|Control + f             | Bind Key            |
+|Bind + v        |   | Vertical Split |
+|Bind + s          | Horizontal Split |
+|Bind + ?          | Help    |
+|Bind + c     | Create New Window|
+|Bind + 0.. | Switch Window |
+|Bind + left| go to the next pane on the left |
+|Bind + right|go to the right pane on the right|
+|Bind + up|go up |
+|Bind + down| go down|
