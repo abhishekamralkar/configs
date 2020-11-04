@@ -8,4 +8,4 @@ I try to use Keyboard most of the time and which means you need to remember alot
 |Control/Shift + N | To spin Alacritty   |
 |Control/Shift + V | To Paste  |
 |Control/Shift + C | To Copy |
-|Control/Shift + H | To Hide |#+title: Alacritty KeyBindings
+|Control/Shift + H | To Hide |

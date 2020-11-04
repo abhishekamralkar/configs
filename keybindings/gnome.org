@@ -16,6 +16,14 @@
 |Alt+Left|Split Left|
 |Alt+Right|Split Right|
 
+* Custom
+
+|Keybindings| Purpose|
+|Ctrl+Alt+E | Emacs|
+|Ctrl+Alt+B | Forefox|
+|Ctrl+Alt+S | Settings|
+|Ctrl+Alt+T | Alacritty|
+|Ctrl+ALT+V | VSCode|
 
 * Browser
 
