@@ -20,3 +20,5 @@ I try to use Keyboard most of the time and which means you need to remember alot
 |Bind + q | Display Pane Numbers|
 |Bind + : + setw synchronize-panes on | Broadcast to all panes|
 |Bind + : + setw synchronize-panes off | Disable broadcast to all panes|
+|Bind + x | Kill the Pane|
+
