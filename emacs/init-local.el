@@ -21,6 +21,19 @@
   :custom (fira-code-mode-disabled-ligatures '("[]" "x"))  ; ligatures you don't want
   :hook prog-mode)
 
+
+;; elpy
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+
+;; set default python3
+(setq python-shell-interpreter "python3"
+      python-shell-interpreter-args "-i")
+
+(setq python-indent-guess-indent-offset t)  
+(setq python-indent-guess-indent-offset-verbose nil)
 (desktop-save-mode 0)
 
 

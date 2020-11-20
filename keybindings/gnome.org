@@ -3,7 +3,7 @@
 * Window
 
 |Keybindings| Purpose|
-|Alt+W    |Activate the window menu|
+|Ctrl+Alt+W |Activate the window menu|
 |Alt+C |Close window|
 |Alt+H|Hide window|
 |Alt+L|Lower window below other windows|
@@ -18,8 +18,7 @@
 |Alt+Left|Split Left|
 |Alt+Right|Split Right|
 
-* Custom
-
+* Custom/Launchers
 |Keybindings| Purpose|
 |Ctrl+Alt+E | Emacs|
 |Ctrl+Alt+B | Forefox|
@@ -27,8 +26,14 @@
 |Ctrl+Alt+T | Alacritty|
 |Ctrl+ALT+V | VSCode|
 
+* Accessibility
+|Keybindings| Purpose|
+|Ctrl+Alt+D | Decrease Text Size|
+|Ctrl+Alt+I | Increase Text Size |
+
 * Browser
 
 |Keybindings| Purpose |
 | Ctrl+T | New Tab |
 | Ctrl+Tab | Switch between Tabs|
+| Ctrl+W   | Close Tab          |
