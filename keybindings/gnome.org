@@ -3,15 +3,17 @@
 * Window
 
 |Keybindings| Purpose|
-|Alt+Space|Activate the window menu|
+|Alt+W    |Activate the window menu|
 |Alt+C |Close window|
 |Alt+H|Hide window|
+|Alt+L|Lower window below other windows|
+
 |Alt+M|Move window|
-|Alt+Y| Maximize window|
-|Alt+Z| Maximize window horizontally|
-|Alt+V| Maximize window vertically|
+|Alt+Z | Maximize window|
+|Alt+A | Maximize window horizontally|
+|Alt+V | Maximize window vertically|
 |ALt+R|Resize window|
-|Alt+Q|Restore window |
+|Alt+O |Restore window |
 |Alt+F| Full Screean|
 |Alt+Left|Split Left|
 |Alt+Right|Split Right|
