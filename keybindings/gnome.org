@@ -12,7 +12,7 @@
 |Alt+Z | Maximize window|
 |Alt+A | Maximize window horizontally|
 |Alt+V | Maximize window vertically|
-|ALt+R|Resize window|
+|Alt+R |Resize window|
 |Alt+O |Restore window |
 |Alt+F| Full Screean|
 |Alt+Left|Split Left|
@@ -21,7 +21,7 @@
 * Custom/Launchers
 |Keybindings| Purpose|
 |Ctrl+Alt+E | Emacs|
-|Ctrl+Alt+B | Forefox|
+|Ctrl+Alt+B | Firefox |
 |Ctrl+Alt+S | Settings|
 |Ctrl+Alt+T | Alacritty|
 |Ctrl+ALT+V | VSCode|
@@ -37,3 +37,4 @@
 | Ctrl+T | New Tab |
 | Ctrl+Tab | Switch between Tabs|
 | Ctrl+W   | Close Tab          |
+| Ctrl+Shift+R | Refresh Tab|
