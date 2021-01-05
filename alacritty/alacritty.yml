@@ -15,16 +15,18 @@ scrolling:
 
 background_opacity: 0.95
 
+live_config_reload: true
+
 # Font configuration
 font:
   normal:
-    family: MesloLGS NF
+    family: Fira Code
     style: Regular
   bold:
-    family: MesloLGS NF
+    family: Fira Code
     style: Bold
   italic:
-    family: MesloLGS NF
+    family: Fira Code
     style: Italic
 
   size: 9.0
@@ -88,10 +90,12 @@ colors:
     magenta: '#ff55ff'
     cyan:    '#6ae3fa'
     white:   '#ffffff'
+
 shell:
   program: /usr/bin/zsh
   args:
     - --login
+
 
 
 key_bindings:
