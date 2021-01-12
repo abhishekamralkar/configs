@@ -57,39 +57,35 @@ mouse:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: true
-# Colors (Cobalt 2)
+
+# The 'GNOME Dark" theme from GNOME terminal.
+
 colors:
-  cursor:
-    text: '#fefff2'
-    cursor: '#f0cc09'
-
-  selection:
-    text: '#b5b5b5'
-    background: '#18354f'
-
   primary:
-    background: '#132738'
-    foreground: '#ffffff'
+    foreground: '#d0cfcc'
+    background: '#171421'
 
   normal:
-    black:   '#000000'
-    red:     '#ff0000'
-    green:   '#38de21'
-    yellow:  '#ffe50a'
-    blue:    '#1460d2'
-    magenta: '#ff005d'
-    cyan:    '#00bbbb'
-    white:   '#bbbbbb'
+    black:   '#171421'
+    red:     '#c01c28'
+    green:   '#26a269'
+    yellow:  '#a2734c'
+    blue:    '#12488b'
+    magenta: '#a347ba'
+    cyan:    '#2aa1b3'
+    white:   '#d0cfcc'
 
   bright:
-    black:   '#555555'
-    red:     '#f40e17'
-    green:   '#3bd01d'
-    yellow:  '#edc809'
-    blue:    '#5555ff'
-    magenta: '#ff55ff'
-    cyan:    '#6ae3fa'
+    black:   '#5e5c64'
+    red:     '#f66151'
+    green:   '#33d17a'
+    yellow:  '#e9ad0c'
+    blue:    '#2a7bde'
+    magenta: '#c061cb'
+    cyan:    '#33c7de'
     white:   '#ffffff'
+
+
 
 shell:
   program: /usr/bin/zsh
