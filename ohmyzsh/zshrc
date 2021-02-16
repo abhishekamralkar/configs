@@ -145,7 +145,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu:$PATH"
 
 # Custom Path
-export PATH=$PATH:$HOME/Bin
+export PATH=$PATH:$HOME/System/Bin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -156,6 +156,10 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 alias ll='colorls -lA --sd --gs --group-directories-first'
 alias ls='colorls --group-directories-first'
+alias la="colorls -al"
 
 
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
