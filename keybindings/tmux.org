@@ -6,7 +6,7 @@ I try to use Keyboard most of the time and which means you need to remember alot
 |Key  |Purpose             |
 |---+---|
 |Control + f             | Bind Key            |
-|Bind + v        |   | Vertical Split |
+|Bind + v          | Vertical Split |
 |Bind + s          | Horizontal Split |
 |Bind + ?          | Help    |
 |Bind + c     | Create New Window|
