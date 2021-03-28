@@ -126,21 +126,14 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # JAVA Path
-export PATH=/home/aaa/Softwares/jdk-11.0.8+10/bin:$PATH
+export PATH=~/Softwares/jdk-11.0.8+10/bin:$PATH
 
-# Go
-#export GOROOT=/usr/local/go
-#export PATH=$PATH:$GOROOT/bin
-#export PATH=$PATH:$GOPATH/bin
-#export GOPATH=$GOPATH:$HOME/Code/golang
-#export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-
+# GO Path
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Code/golang
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
-# Rust
+# Rust Path
 export PATH="$HOME/.cargo/bin:$PATH"
 export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu:$PATH"
 
@@ -152,14 +145,10 @@ export PATH=$PATH:$HOME/System/Bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 alias ll='colorls -lA --sd --gs --group-directories-first'
 alias ls='colorls --group-directories-first'
 alias la="colorls -al"
 
 
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
