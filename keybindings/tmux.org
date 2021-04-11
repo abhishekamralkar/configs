@@ -3,22 +3,26 @@
 I try to use Keyboard most of the time and which means you need to remember alot of Keybindings.
 
 
-|Key  |Purpose             |
-|---+---|
-|Control + f             | Bind Key            |
-|Bind + v          | Vertical Split |
-|Bind + s          | Horizontal Split |
-|Bind + ?          | Help    |
-|Bind + c     | Create New Window|
-|Bind + 0-n | Switch Window |
-|Bind + left| go to the next pane on the left |
-|Bind + right|go to the right pane on the right|
-|Bind + up|go up |
-|Bind + down| go down|
-|Bind + Ctrl+up | resize|
-|Bind + x | Kill|
-|Bind + q | Display Pane Numbers|
-|Bind + : + setw synchronize-panes on | Broadcast to all panes|
-|Bind + : + setw synchronize-panes off | Disable broadcast to all panes|
-|Bind + x | Kill the Pane|
-|Bind + [ | Enable Mouse Scroll |
+| Key                                   | Purpose                           |
+|---------------------------------------+-----------------------------------|
+| Control + f                           | Bind Key                          |
+| Bind + v                              | Vertical Split                    |
+| Bind + s                              | Horizontal Split                  |
+| Bind + ?                              | Help                              |
+| Bind + c                              | Create New Window                 |
+| Bind + 0-n                            | Switch Window                     |
+| Bind + left                           | go to the next pane on the left   |
+| Bind + right                          | go to the right pane on the right |
+| Bind + up                             | go up                             |
+| Bind + down                           | go down                           |
+| Bind + Ctrl+up                        | resize                            |
+| Bind + [                              | Enter to Copy Mode                |
+| Control + SPC                         | To start Copy                     |
+| Control + w                           | To copy                           |
+| Bind + ]                              | To Paste                          |
+| Bind + x                              | Kill                              |
+| Bind + q                              | Display Pane Numbers              |
+| Bind + : + setw synchronize-panes on  | Broadcast to all panes            |
+| Bind + : + setw synchronize-panes off | Disable broadcast to all panes    |
+| Bind + x                              | Kill the Pane                     |
+| Bind + [                              | Enable Mouse Scroll               |

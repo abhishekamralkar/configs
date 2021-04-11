@@ -125,11 +125,11 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # JAVA Path
-export PATH=~/Softwares/jdk-11.0.8+10/bin:$PATH
+export PATH=~/Softwares/java/bin:$PATH
 
 # GO Path
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/Code/golang
+export GOPATH=$HOME/Code/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Rust Path

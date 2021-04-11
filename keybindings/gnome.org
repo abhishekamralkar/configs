@@ -2,39 +2,38 @@
 
 * Window
 
-|Keybindings| Purpose|
-|Ctrl+Alt+W |Activate the window menu|
-|Alt+C |Close window|
-|Alt+H|Hide window|
-|Alt+L|Lower window below other windows|
-
-|Alt+M|Move window|
-|Alt+Z | Maximize window|
-|Alt+A | Maximize window horizontally|
-|Alt+V | Maximize window vertically|
-|Alt+R |Resize window|
-|Alt+O |Restore window |
-|Alt+F| Full Screean|
-|Alt+Left|Split Left|
-|Alt+Right|Split Right|
+| Keybindings | Purpose                          |
+| Ctrl+Alt+W  | Activate the window menu         |
+| Alt+C       | Close window                     |
+| Alt+H       | Hide window                      |
+| Alt+L       | Lower window below other windows |
+| Alt+M       | Move window                      |
+| Alt+Z       | Maximize window                  |
+| Alt+A       | Maximize window horizontally     |
+| Alt+V       | Maximize window vertically       |
+| Alt+R       | Resize window                    |
+| Alt+O       | Restore window                   |
+| Alt+F       | Full Screean                     |
+| Alt+Left    | Split Left                       |
+| Alt+Right   | Split Right                      |
 
 * Custom/Launchers
-|Keybindings| Purpose|
-|Ctrl+Alt+E | Emacs|
-|Ctrl+Alt+B | Firefox |
-|Ctrl+Alt+S | Settings|
-|Ctrl+Alt+T | Alacritty|
-|Ctrl+ALT+V | VSCode|
+| Keybindings | Purpose   |
+| Ctrl+Alt+E  | Emacs     |
+| Ctrl+Alt+B  | Firefox   |
+| Ctrl+Alt+S  | Settings  |
+| Ctrl+Alt+T  | Alacritty |
+| Ctrl+ALT+V  | VSCode    |
 
 * Accessibility
-|Keybindings| Purpose|
-|Ctrl+Alt+D | Decrease Text Size|
-|Ctrl+Alt+I | Increase Text Size |
+| Keybindings | Purpose            |
+| Ctrl+Alt+D  | Decrease Text Size |
+| Ctrl+Alt+I  | Increase Text Size |
 
 * Browser
 
-|Keybindings| Purpose |
-| Ctrl+T | New Tab |
-| Ctrl+Tab | Switch between Tabs|
-| Ctrl+W   | Close Tab          |
-| Ctrl+Shift+R | Refresh Tab|
+| Keybindings  | Purpose             |
+| Ctrl+T       | New Tab             |
+| Ctrl+Tab     | Switch between Tabs |
+| Ctrl+W       | Close Tab           |
+| Ctrl+Shift+R | Refresh Tab         |

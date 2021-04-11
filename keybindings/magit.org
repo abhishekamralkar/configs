@@ -5,18 +5,18 @@
 
 * Buffers
 
-| M-x magit-status | Magit's status buffer  | The main entry point to Magit, and the context where the commands described in this cheatsheet are meant to be executed. Probably a good idea to bind magit-status to a key. |
-| $                | magit-process buffer   | Behind-the-scenes. Displays the git command and its output.                                                                                                                                 |
-| g                | reload status buffer   | Necessary to update an existing Magit status buffer after saving a file in emacs, or after making changes to repo outside of emacs.                                                         |
+| M-x magit-status | Magit's status buffer | The main entry point to Magit, and the context where the commands described in this cheatsheet are meant to be executed. Probably a good idea to bind magit-status to a key. |
+| $                | magit-process buffer  | Behind-the-scenes. Displays the git command and its output.                                                                                                                  |
+| g                | reload status buffer  | Necessary to update an existing Magit status buffer after saving a file in emacs, or after making changes to repo outside of emacs.                                          |
 
 
 
 * Section Visibility
 
-| TAB       | Toggle visibility of current section                                    |         |
-| S-TAB     | Toggle visibility of current section and its children                   |         |
+| TAB       | Toggle visibility of current section                                       |                                                       |
+| S-TAB     | Toggle visibility of current section and its children                      |                                                       |
 | 1,2,3,4   | Expand current section to the corresponding level of detail - 1, 2, 3 or 4 | e.g., 4 will show all detail for the current section. |
-| M-1,2,3,4 | Expand all sections to the corresponding level of detail - 1, 2, 3 or 4 | e.g., M-4 will show all detail for the entire buffer. |
+| M-1,2,3,4 | Expand all sections to the corresponding level of detail - 1, 2, 3 or 4    | e.g., M-4 will show all detail for the entire buffer. |
 
 
 * Untracked Files
