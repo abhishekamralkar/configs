@@ -82,7 +82,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-	terraform 
+	 terraform 
 	 tmux 
 	 zsh-completions 
 	 zsh-autosuggestions
@@ -138,6 +138,9 @@ export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu:$
 
 # Custom Path
 export PATH=$PATH:$HOME/System/Bin
+
+# Pycharm Path
+#export PATH=$HOME/System/Bin/pycharm/bin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
