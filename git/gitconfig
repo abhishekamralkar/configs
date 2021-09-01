@@ -4,7 +4,7 @@
 [user]
 	name = Abhishek Amralkar
 	email = abhishekamralkar@gmail.com
-	signinkey = 22E40F5ADA9AC87B
+	signinkey = 25FE39D7C780AF74
 [core]
 	editor = emacs
 [commit]
