@@ -48,4 +48,32 @@
 |C-x 1	|Delete all other windows, leaving only the current window in the frame. This doesn’t close your buffers, and it won’t cause you to lose any work.|
 |C-x 2	|Split frame above and below.                                                                                                                     |
 |C-x 3	|Split frame side by side.                                                                                                                        |
-|C-x 0	|Delete current window.                                                                                                                           |
+|C-x 0	|Delete current window.  
+
+
+* python
+
+|Keys | Purpose
+|----------------------+---------------|
+|C-c C-z | open a python shell|
+|C-c C-c | run the content of the buffer in the opened python shell|
+|C-c C-r | run the selected region in the python shell     |
+|C-c C-c       |python-shell-send-buffer|
+|C-c C-d       |python-describe-at-point|
+|C-c C-f       |python-eldoc-at-point|
+|C-c C-j       |imenu|
+|C-c C-l       |python-shell-send-file|
+|C-c C-p       |run-python|
+|C-c C-r       |python-shell-send-region|
+|C-c C-s       |python-shell-send-string|
+|C-c C-t       |Prefix Command|
+|C-c C-v       |python-check|
+|C-c C-z       |python-shell-switch-to-shell|
+|C-c <     |python-indent-shift-left|
+|C-c >     |python-indent-shift-right|
+|C-c C-t c |python-skeleton-class|
+|C-c C-t d |python-skeleton-defC-c C-t f python-skeleton-for|
+|C-c C-t i |python-skeleton-if|
+|C-c C-t m |python-skeleton-import|
+|C-c C-t t |python-skeleton-try|
+|C-c C-t w |python-skeleton-while|
