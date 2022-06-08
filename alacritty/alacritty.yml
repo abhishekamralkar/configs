@@ -6,29 +6,28 @@ window:
   padding:
     x: 10
     y: 10
-  decorations: none
+  opacity: 0.9
 
 scrolling:
   history: 100000
   multiplier: 3
 
-background_opacity: 0.95
 
 live_config_reload: true
 
 # Font configuration
 font:
   normal:
-    family: Fira Code
-    style: Retina
+    family: Hack
+    style: Regular
   bold:
-    family: Fira Code
+    family: Hack
     style: Bold
   italic:
-    family: Fira Code
+    family: Hack
     style: Italic
 
-  size: 10.0
+  size: 9.0
 
   offset:
     x: 0
@@ -50,8 +49,8 @@ mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
   hide_when_typing: true
-  url:
-    launcher: open
+  hints:
+    mods: Control
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
@@ -59,34 +58,31 @@ selection:
 
 # The 'GNOME Dark" theme from GNOME terminal.
 colors:
-  # Default colors
+  # Colors (Gruvbox Material Dark Medium)
+colors:
   primary:
-    # hard contrast: background = '#1d2021'
-    background: '#282828'
-    # soft contrast: background = '#32302f'
-    foreground: '#ebdbb2'
+    background: '0x282828'
+    foreground: '0xdfbf8e'
 
-  # Normal colors
   normal:
-    black: '#282828'
-    red: '#cc241d'
-    green: '#98971a'
-    yellow: '#d79921'
-    blue: '#458588'
-    magenta: '#b16286'
-    cyan: '#689d6a'
-    white: '#a89984'
+    black:   '0x665c54'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe78a4e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
-  # Bright colors
   bright:
-    black: '#928374'
-    red: '#fb4934'
-    green: '#b8bb26'
-    yellow: '#fabd2f'
-    blue: '#83a598'
-    magenta: '#d3869b'
-    cyan: '#8ec07c'
-    white: '#ebdbb2'
+    black:   '0x928374'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe3a84e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
 shell:
   program: /usr/bin/zsh
