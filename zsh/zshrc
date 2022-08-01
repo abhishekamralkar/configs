@@ -1,0 +1,42 @@
+# colors
+autoload -U colors && colors
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats ' %b'
+setopt PROMPT_SUBST
+PROMPT='%B%{$fg[blue]%}%c %{$fg[yellow]%}>%{$fg[red]%}>%{$fg[magenta]%}>%{$fg[cyan]%}${vcs_info_msg_0_}%b '
+ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}!"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+# History
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+
+source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+bindkey -v
+export KEYTIMEOUT=1
+
+bindkey '^H' backward-kill-word
+#bindkey '^l' autosuggest-accept
+
+# Basic auto/tab complete:
+autoload -Uz compinit && compinit
+
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+fpath=(~/.zsh/zsh-autocomplete $fpath)
+
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu yes select interactive
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
