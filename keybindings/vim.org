@@ -3,17 +3,22 @@
 
 * Motions
 
-| Keys       | Purpose                                             |
-|------------+-----------------------------------------------------|
-| h          | Left                                                |
-| k          | Up                                                  |
-| j          | Down                                                |
-| l          | Right                                               |
-| w          | Move forward to the beginning of the next word      |
-| e          | Move forward to the end of the current word         |
-| b          | Move backward to the start of the current word      |
-| }          | Jump to the next paragraph                          |
-| $          | Go to the end of the line                           |
-| ^          | Go to the start of the line                         |
+| Keys | Purpose                                        |
+|------+------------------------------------------------|
+| h    | Left                                           |
+| k    | Up                                             |
+| j    | Down                                           |
+| l    | Right                                          |
+| w    | Move forward to the beginning of the next word |
+| e    | Move forward to the end of the current word    |
+| b    | Move backward to the start of the current word |
+| }    | Jump to the next paragraph                     |
+| $    | Go to the end of the line                      |
+| ^    | Go to the start of the line                    |
+| y    |Yank text (copy)|
+|yy    |Yank entire line|
+|d     |Delete text and save to register|
+|dd    |Delete the entire line|
+|c     |Delete text, save to register, and start insert mode|
 
 
