@@ -1,0 +1,19 @@
+[abhishekamralkar]
+	name = Abhishek Amralkar
+	email = abhishekamralkar@gmail.com
+[user]
+	name = Abhishek Amralkar
+	email = abhishekamralkar@gmail.com
+	signinkey = EB59AA154F5103A0
+[core]
+	editor = emacs
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[help]
+	autocorrect = 10
+[alias]
+	last = log -1 HEAD
