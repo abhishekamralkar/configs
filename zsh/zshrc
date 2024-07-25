@@ -1,14 +1,14 @@
 eval "$(starship init zsh)"
 
-# Plugins
+# PLUGINS
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# History
+# HISTORY
 HISTSIZE=1000   # Number of commands to keep in memory
 SAVEHIST=1000000  # Number of commands to save in the history file
-HISTFILE=~/.my_custom_history
+HISTFILE=~/.zsh/my_custom_history
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt EXTENDED_HISTORY
@@ -17,13 +17,10 @@ setopt EXTENDED_HISTORY
 export EDITOR="emacs"
 
 # Set the default browser
-export BROWSER="chrome"
+export BROWSER="brave"
 
-# Enable colorized output in the terminal
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin:/home/aaa/.local/bin
-export GOPATH=$HOME/code/golang
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
+# SPACESHIP PROMPT
+source "$HOME/.zsh/spaceship/spaceship.zsh"
