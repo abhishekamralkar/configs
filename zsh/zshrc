@@ -4,6 +4,7 @@ eval "$(starship init zsh)"
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/kubectl.plugin.zsh
 
 # HISTORY
 HISTSIZE=1000   # Number of commands to keep in memory
@@ -22,5 +23,10 @@ export BROWSER="brave"
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# SPACESHIP PROMPT
-source "$HOME/.zsh/spaceship/spaceship.zsh"
+# GO PATH
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# BREW PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
