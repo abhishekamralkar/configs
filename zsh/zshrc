@@ -55,3 +55,4 @@ source <(kubectl completion zsh)
 
 # alias
 alias k="kubectl"
+alias cat="bat"
