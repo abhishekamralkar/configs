@@ -1,18 +1,28 @@
 eval "$(starship init zsh)"
 
+# Enable command auto-completion
+autoload -U compinit
+#zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+compinit
+
 # PLUGINS
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/kubectl.plugin.zsh
 
+
 # HISTORY
 HISTSIZE=1000   # Number of commands to keep in memory
 SAVEHIST=1000000  # Number of commands to save in the history file
 HISTFILE=~/.zsh/my_custom_history
-setopt SHARE_HISTORY
-setopt HIST_IGNORE_DUPS
-setopt EXTENDED_HISTORY
+
+# Configure the history
+setopt append_history
+setopt share_history
+
+# Enable auto-cd (change to your preferred behavior)
+setopt auto_cd
 
 # Set the default editor
 export EDITOR="emacs"
@@ -28,5 +38,20 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# RUST PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# custom path
+export PATH="$HOME/bin:$PATH"
+
 # BREW PATH
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# colorize
+export CLICOLOR=1
+
+# k8s completion
+source <(kubectl completion zsh)
+
+# alias
+alias k="kubectl"
