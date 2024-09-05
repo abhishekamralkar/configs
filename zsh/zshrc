@@ -126,10 +126,6 @@ export CLICOLOR=1
 source <(kubectl completion zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/Code/go
-export PATH=$PATH:$GOPATH/bin
-
 
 source $HOME/.atuin/bin/env
 eval "$(atuin init zsh)"
